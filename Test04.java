@@ -12,6 +12,10 @@ public class Test04 {
 		Scanner conosle = new Scanner(System.in);
 		String s = conosle.next();
 		int a = s.indexOf("@");
-		System.out.println(s.substring(0,a));
+		if(a != -1) {
+			System.out.println(s.substring(0, a));
+		}else{
+			System.out.println("不是邮箱");
+		}
 	}
 }
